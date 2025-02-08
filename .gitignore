@@ -1,0 +1,61 @@
+# Python virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Merged PDF and temporary files
+*.pdf
+!requirements.pdf
+*_temp.pdf
+
+# Sensitive information
+.env
+*.key
+secrets.json
+
+# Logs
+logs/
+*.log
+
+# Pytest
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Mypy cache
+.mypy_cache/
+
+# Project-specific temporary files
+temp/
+output/
