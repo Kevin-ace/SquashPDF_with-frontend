@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquashPDF - PDF Merger</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="pdf-merger-box">
+            <h1>SquashPDF</h1>
+            <p>Merge your PDF files easily</p>
+            
+            <div class="file-upload-container">
+                <input 
+                    type="file" 
+                    id="fileInput" 
+                    multiple 
+                    accept=".pdf,.jpg,.jpeg,.png,.gif,.bmp,.tiff"
+                    class="file-input"
+                >
+                <label for="fileInput" class="file-input-label">
+                    <span class="upload-icon">📄</span>
+                    <span id="file-chosen">No files chosen</span>
+                </label>
+            </div>
+
+            <div id="file-list" class="file-list"></div>
+
+            <div class="filename-container">
+                <label for="filename-input">Merged PDF Name:</label>
+                <input 
+                    type="text" 
+                    id="filename-input" 
+                    placeholder="Enter filename (optional)" 
+                    class="filename-input"
+                >
+            </div>
+
+            <button id="merge-btn" class="merge-button" disabled>
+                Merge PDFs
+            </button>
+
+            <div id="status-message" class="status-message"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
